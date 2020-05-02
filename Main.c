@@ -5,7 +5,7 @@ int main()
 	int a, b, c, big, mid, small;
 	char check;
 start:
-	printf("Lutfen uc sayi girin:");
+	printf("Please enter three numbers:");
 	scanf_s("%d %d %d", &a, &b, &c);
 	if (b > a)
 	{
@@ -58,14 +58,14 @@ start:
 		}
 	}
 quest:
-	printf("Cikmak istiyor musunuz?(e/h):");
+	printf("Would you like to exit?(y/n):");
 	scanf_s(" %c", &check);
 	switch (check)
 	{
-	case('e') :
+	case('y') :
 		printf("Gule gule!\n");
 		break;
-	case('h') :
+	case('n') :
 		goto start;
 		break;
 	default:
